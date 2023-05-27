@@ -21,10 +21,14 @@ module.exports = {
         "3xl": "1920px",
         "4xl": "2560px",
       },
+      lineHeight: {
+        11: "54px",
+      },
     },
     colors: {
       "blacklish-green": "#112211",
       "mint-green": "#8DD3BB",
+      "light-mint": "#CDEAE1",
       slamon: "#FF8682",
       white: "#FFFFFF",
     },
@@ -38,9 +42,11 @@ module.exports = {
       "2xl": "32px",
       "3xl": "36px",
       "4xl": "40px",
+      "5xl": "44px",
     },
     fontFamily: {
       montserrat: ["Montserrat", "sans-serif"],
+      gothic: ["var(--trade-gothic)", "sans-serif"],
     },
   },
   plugins: [],

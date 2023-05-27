@@ -1,3 +1,4 @@
+import Footer from "@/components/global/Footer";
 import Header from "@/components/global/Header";
 import type { Metadata } from "next";
 
@@ -16,6 +17,7 @@ export default function RootLayout({
     <>
       <Header />
       {children}
+      <Footer />
     </>
   );
 }
