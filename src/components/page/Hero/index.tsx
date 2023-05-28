@@ -22,7 +22,7 @@ const Hero = () => {
         </p>
       </div>
 
-      <SimulationContainer />
+      {/* <SimulationContainer /> */}
     </div>
   );
 };
