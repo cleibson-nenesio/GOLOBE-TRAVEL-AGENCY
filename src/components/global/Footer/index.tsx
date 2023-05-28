@@ -127,7 +127,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-mint-green flex flex-col items-center px-8 py-6 pt-36 relative">
+    <footer className="bg-mint-green flex flex-col items-center px-8 py-6 pt-36 relative mt-60">
       <NewsletterContainer />
 
       <div className="block lg:flex items-center gap-32 mt-14">

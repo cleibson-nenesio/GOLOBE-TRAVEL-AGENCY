@@ -23,6 +23,10 @@ module.exports = {
       },
       lineHeight: {
         11: "54px",
+        18: "108px",
+      },
+      backgroundImage: {
+        hero: "linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url('/images/hero_boat.png')",
       },
     },
     colors: {
@@ -43,6 +47,15 @@ module.exports = {
       "3xl": "36px",
       "4xl": "40px",
       "5xl": "44px",
+      "6xl": "52px",
+      "7xl": "58px",
+      "9xl": "80px",
+    },
+    height: {
+      hero: "599px",
+    },
+    maxWidth: {
+      default: "1440px",
     },
     fontFamily: {
       montserrat: ["Montserrat", "sans-serif"],

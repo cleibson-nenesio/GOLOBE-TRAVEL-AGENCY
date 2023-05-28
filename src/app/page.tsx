@@ -1,24 +1,14 @@
-// Fonts
-import TradeGothic from "next/font/local";
-
-const tradeGothic = TradeGothic({
-  src: [
-    {
-      path: "../../public/fonts/trade-gothic.ttf",
-      weight: "400",
-    },
-    {
-      path: "../../public/fonts/trade-gothic-bold.ttf",
-      weight: "700",
-    },
-  ],
-  variable: "--trade-gothic",
-});
+// Components
+import Hero from "@/components/page/Hero";
+import Footer from "@/components/global/Footer";
 
 export default function Home() {
   return (
-    <main>
-      <h2>Site</h2>
-    </main>
+    <>
+      <main className="w-full">
+        <Hero />
+      </main>
+      <Footer />
+    </>
   );
 }
