@@ -1,21 +1,6 @@
 // Next
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
-import TradeGothic from "next/font/local";
-
-const gothic = TradeGothic({
-  src: [
-    {
-      path: "../../public/fonts/trade-gothic.ttf",
-      weight: "400",
-    },
-    {
-      path: "../../public/fonts/trade-gothic-bold.ttf",
-      weight: "700",
-    },
-  ],
-  variable: "--trade-gothic",
-});
 
 // Styles
 import "./globals.css";

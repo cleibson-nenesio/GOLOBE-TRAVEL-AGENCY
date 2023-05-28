@@ -145,7 +145,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 justify-between mt-7">
           {footerMenus?.map((menu, index) => (
             <div key={index} className="flex flex-col mb-4">
-              <h3 className="font-bold mb-1 font-gothic">{menu?.title}</h3>
+              <h3 className="font-bold mb-1 font-heading">{menu?.title}</h3>
 
               {menu?.subMenus?.map((subMenu, index) => (
                 <Link

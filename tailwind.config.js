@@ -4,6 +4,7 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/assets/icons/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -28,13 +29,16 @@ module.exports = {
       backgroundImage: {
         hero: "linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url('/images/hero_boat.png')",
       },
-    },
-    colors: {
-      "blacklish-green": "#112211",
-      "mint-green": "#8DD3BB",
-      "light-mint": "#CDEAE1",
-      slamon: "#FF8682",
-      white: "#FFFFFF",
+      colors: {
+        "blacklish-green": "#112211",
+        "mint-green": "#8DD3BB",
+        "light-mint": "#CDEAE1",
+        slamon: "#FF8682",
+        white: "#FFFFFF",
+      },
+      height: {
+        hero: "599px",
+      },
     },
     fontSize: {
       xs: "10px",
@@ -51,15 +55,12 @@ module.exports = {
       "7xl": "58px",
       "9xl": "80px",
     },
-    height: {
-      hero: "599px",
-    },
     maxWidth: {
       default: "1440px",
     },
     fontFamily: {
       montserrat: ["Montserrat", "sans-serif"],
-      gothic: ["var(--trade-gothic)", "sans-serif"],
+      heading: ["Trade Gothic", "sans-serif"],
     },
   },
   plugins: [],
