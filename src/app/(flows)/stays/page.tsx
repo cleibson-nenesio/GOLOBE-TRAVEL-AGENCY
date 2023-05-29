@@ -1,7 +1,7 @@
 import React from "react";
 
 const FlightFlow = () => {
-  return <div className="h-screen">Stays Flow</div>;
+  return <main className="h-screen"></main>;
 };
 
 export default FlightFlow;
