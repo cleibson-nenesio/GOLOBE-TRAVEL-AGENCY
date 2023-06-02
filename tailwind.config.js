@@ -39,6 +39,9 @@ module.exports = {
       height: {
         hero: "599px",
       },
+      maxWidth: {
+        default: "1440px",
+      },
     },
     fontSize: {
       xs: "10px",
@@ -54,9 +57,6 @@ module.exports = {
       "6xl": "52px",
       "7xl": "58px",
       "9xl": "80px",
-    },
-    maxWidth: {
-      default: "1440px",
     },
     fontFamily: {
       montserrat: ["Montserrat", "sans-serif"],
