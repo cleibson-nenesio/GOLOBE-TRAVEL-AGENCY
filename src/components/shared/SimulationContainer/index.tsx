@@ -15,12 +15,12 @@ const SimulationContainer = () => {
         <div className="flex">
           <div className="flex items-center gap-2 relative before:absolute mr-7 before:-bottom-5 before:h-1 before:bg-mint-green before:w-full">
             <I.PlaneIcon />
-            <span>Fligths</span>
+            <span className="font-semibold">Fligths</span>
           </div>
           <span className="h-10 w-px bg-slate-200 inline-block" />
           <div className="flex items-center gap-2 relative before:absolute ml-7 before:-bottom-5 before:h-1 before:bg-mint-green before:w-full">
             <I.BedIcon />
-            <span>Stays</span>
+            <span className="font-semibold">Stays</span>
           </div>
         </div>
 
