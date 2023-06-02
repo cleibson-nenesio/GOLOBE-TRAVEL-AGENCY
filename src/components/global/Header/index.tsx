@@ -25,6 +25,16 @@ const Header = ({ colorMode = "dark" }: IHeader) => {
   const menuRef: React.RefObject<HTMLDivElement> | null = useRef(null);
   const pathName = usePathname();
 
+  const fakeUser = {
+    id: 1,
+    name: "John D.",
+    photo:
+      "https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg",
+    online: true,
+  };
+
+  const isLoggedIn = true;
+
   function toggleOpenMenu() {
     if (!menuRef?.current) return;
 
@@ -32,19 +42,7 @@ const Header = ({ colorMode = "dark" }: IHeader) => {
     menuRef?.current?.classList?.toggle("hidden");
   }
 
-  const menuItems = [
-    {
-      label: "Find Flight",
-      path: "/",
-      icon: <I.PlaneIcon />,
-      style: "",
-    },
-    {
-      label: "Find Stays",
-      path: "/",
-      icon: <I.BedIcon />,
-      style: "",
-    },
+  const guestUser = [
     {
       label: "Login",
       path: "/login",
@@ -59,13 +57,48 @@ const Header = ({ colorMode = "dark" }: IHeader) => {
     },
   ];
 
-  const fakeUser = {
-    id: 1,
-    name: "John D.",
-    photo:
-      "https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg",
-    online: true,
-  };
+  const loggedInUser = [
+    {
+      label: fakeUser?.name,
+      path: "/user",
+      icon: (
+        <div className="rounded-full w-7 aspect-square bg-gray-200 mr-4 relative flex items-center justify-center">
+          <Image
+            src={fakeUser?.photo}
+            alt={`${fakeUser?.photo} Profile Picture`}
+            width={40}
+            height={40}
+            className="rounded-full aspect-square bg-cover bg-center"
+          />
+        </div>
+      ),
+      style: "",
+    },
+    {
+      label: "Favourites",
+      path: "/user/favourites",
+      icon: <I.HeartIcon />,
+      style: "",
+    },
+  ];
+
+  const menuItems = [
+    {
+      label: "Find Flight",
+      path: "/",
+      icon: <I.PlaneIcon />,
+      style: "",
+    },
+    {
+      label: "Find Stays",
+      path: "/",
+      icon: <I.BedIcon />,
+      style: "",
+    },
+  ];
+
+  if (isLoggedIn) menuItems?.push(...loggedInUser);
+  if (!isLoggedIn) menuItems?.push(...guestUser);
 
   return (
     <header className="flex justify-between px-7 lg:px-14 2xl:px-24 py-6 sticky">
