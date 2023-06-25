@@ -1,34 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Golobe Travel Agency
+
+🌍✈️ Welcome to Golobe Travel Agency! This is a web application built with Next.js, Tailwind CSS, and TypeScript, designed to provide a seamless experience for travelers and help them explore the beautiful destinations in Qatar.
+
+[Golobe Travel Agency](<https://www.figma.com/file/2uCdXBwsV2P8xmN4C2U2F7/Golobe---Travel-agency-website-(Community)?type=design&node-id=108-18842&mode=design&t=X5TyOn0kzlBo9R0R-0>)
 
 ## Getting Started
 
-First, run the development server:
+To run this project locally on your machine, follow these simple steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+Clone the repository using the following command:
+
+```
+git clone https://github.com/cleibson-nenesio/GOLOBE-TRAVEL-AGENCY.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Navigate to the project directory:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+cd GOLOBE-TRAVEL-AGENCY
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Install the dependencies by running:
 
-## Learn More
+```
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+```
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Discover exciting travel destinations in Qatar.
+- Explore various accommodations and choose the one that suits your preferences.
+- Get detailed information about each location and accommodation option.
+- Book your desired trip and manage your reservations.
+- Browse through stunning images of the destinations.
+- Contact the travel agency for any inquiries or assistance needed.
 
-## Deploy on Vercel
+## Technologies Used
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Next.js - A React framework for building server-rendered applications.
+- Tailwind CSS - A utility-first CSS framework for rapid UI development.
+- TypeScript - A typed superset of JavaScript that compiles to plain JavaScript.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contributing
+
+Contributions are welcome! If you'd like to enhance the Golobe Travel Agency project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make the necessary changes and commit them.
+4. Push your changes to your forked repository.
+5. Submit a pull request explaining your changes.
+
+## License
+
+This project is licensed under the [MIT License.](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt)
+
+---
+
+Let your wanderlust take flight with Golobe Travel Agency! Start planning your next adventure today and experience the wonders of Qatar. Happy traveling! ✈️🌍
