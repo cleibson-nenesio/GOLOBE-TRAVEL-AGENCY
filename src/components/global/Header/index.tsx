@@ -33,7 +33,7 @@ const Header = ({ colorMode = "dark" }: IHeader) => {
     online: true,
   };
 
-  const isLoggedIn = true;
+  const isLoggedIn = false;
 
   function toggleOpenMenu() {
     if (!menuRef?.current) return;
@@ -146,7 +146,7 @@ const Header = ({ colorMode = "dark" }: IHeader) => {
         )}
       </Link>
 
-      {!fakeUser && (
+      {!isLoggedIn && (
         <div className="gap-7 items-center hidden sm:flex">
           <Link
             href="/login"
@@ -169,7 +169,7 @@ const Header = ({ colorMode = "dark" }: IHeader) => {
         </div>
       )}
 
-      {fakeUser && (
+      {isLoggedIn && (
         <UserProfile
           user={fakeUser}
           isDarkTheme={pathName === "/" ? false : true}
