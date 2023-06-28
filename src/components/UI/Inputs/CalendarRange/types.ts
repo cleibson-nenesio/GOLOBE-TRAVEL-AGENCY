@@ -1,8 +1,8 @@
 export interface CalendarRangeProps {
-  label: string;
+	label: string;
 }
 
 export interface IDateRange {
-  startDate: Date;
-  endDate: Date;
+	startDate: Date | null;
+	endDate: Date | null;
 }
