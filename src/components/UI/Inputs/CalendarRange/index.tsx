@@ -8,11 +8,12 @@ import * as T from "./types";
 import DataPicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-import moment from "moment";
-
-import { addDays, isAfter, isSameDay } from "date-fns";
+// Components
 import { CustomInput } from "./Customs/Input";
 import Header from "./Customs/Header";
+
+// Styles
+import "./styles.css";
 
 const InputCalendarRange: React.FC<T.CalendarRangeProps> = ({
 	label,
