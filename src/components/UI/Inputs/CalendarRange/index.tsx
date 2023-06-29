@@ -33,16 +33,6 @@ const InputCalendarRange: React.FC<T.CalendarRangeProps> = ({
     });
   }
 
-  useEffect(() => {
-    const object = {
-      a: 'b',
-      b: 'b',
-      c: 'c',
-    };
-
-    console.log(object);
-  }, []);
-
   return (
     <div className='relative w-full'>
       <div
